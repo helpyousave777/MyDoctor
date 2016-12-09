@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saeed_pc.mydoctor.Main_MyDr.Hi_Dr.question_UI_HiDr.Activity.QuestionFragment">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar_Main_MyDr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/txt_HiDr_main_Subject"
+                    android:id="@+id/txtSubjectQuestion_HiDr"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtSubjectQuestion_HiDr_fragment"
+                    android:layout_below="@+id/txtSubjectQuestion_HiDr"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/txtQuestionQuestion_HiDr_fragment"
+                    android:background="@mipmap/message"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="115dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtDateSendQuestion_HiDr_fragment"
+                    android:layout_below="@+id/txtQuestionQuestion_HiDr_fragment"
+                    android:layout_alignRight="@+id/txtAnswerQuestion_HiDr_fragment"
+                    android:layout_alignEnd="@+id/txtAnswerQuestion_HiDr_fragment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtTimeSendQuestion_HiDr_fragment"
+                    android:layout_below="@+id/txtQuestionQuestion_HiDr_fragment"
+                    android:layout_toRightOf="@+id/txtDateSendQuestion_HiDr_fragment"
+                    android:layout_toEndOf="@+id/txtDateSendQuestion_HiDr_fragment"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large TextLarge TextLarge TextLarge TextLarge TextLarge TextLarge Text"
+                    android:id="@+id/txtAnswerQuestion_HiDr_fragment"
+                    android:background="@mipmap/message"
+                    android:layout_below="@+id/txtDateSendQuestion_HiDr_fragment"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="100dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtDateReceiveQuestion_HiDr_fragment"
+                    android:layout_below="@+id/txtAnswerQuestion_HiDr_fragment"
+                    android:layout_toRightOf="@+id/txtTimeReceiveQuestion_HiDr_fragment"
+                    android:layout_toEndOf="@+id/txtTimeReceiveQuestion_HiDr_fragment"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtTimeReceiveQuestion_HiDr_fragment"
+                    android:layout_below="@+id/txtAnswerQuestion_HiDr_fragment"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

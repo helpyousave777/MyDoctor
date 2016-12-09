@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.example.saeed_pc.mydoctor.OnTabSwipable.FragmentExample">
+
+    <TextView
+        android:id="@+id/txtFragmentA"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_weight="0.07"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <Button
+        android:id="@+id/btnFragmentExampleA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@+id/txtFragmentA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onExampleFragmentA"/>
+
+
+</RelativeLayout>

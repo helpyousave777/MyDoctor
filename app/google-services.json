@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "9904846329",
+    "project_id": "my-doctor-1168"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9904846329:android:750a21db309e6669",
+        "android_client_info": {
+          "package_name": "com.example.saeed_pc.mydoctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDscEQSvROhjcukJcLlOxKV8LI7VXvMkD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

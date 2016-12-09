@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main.Splash.Splash.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_hiDr"
+        android:id="@+id/btnHiMain"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onHiDr"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_store"
+        android:id="@+id/btnStoreMain"
+        android:layout_below="@+id/btnHiMain"
+        android:layout_centerHorizontal="true"
+        android:onClick="onStore"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_reservation"
+        android:id="@+id/btnReservationMain"
+        android:layout_below="@+id/btnStoreMain"
+        android:layout_centerHorizontal="true"
+        android:onClick="onReservation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_advertisement"
+        android:id="@+id/btnAdvertisementMain"
+        android:layout_below="@+id/btnReservationMain"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAdvertisement"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_discount"
+        android:id="@+id/btnDiscountMain"
+        android:layout_below="@+id/btnAdvertisementMain"
+        android:layout_centerHorizontal="true"
+        android:onClick="onDiscount"/>
+</RelativeLayout>

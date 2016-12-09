@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">My Doctor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="title_activity_register">Register Activity</string>
+    <string name="title_activity_main">My Doctor</string>
+
+    <!-- *************************  Registration *******************-->
+    <string name="txt_register_name">Name</string>
+    <string name="txt_register_family">Family</string>
+    <string name="txt_register_phone">Phone</string>
+    <string name="txt_register_mail">Mail</string>
+    <string name="txt_register_UserName">User name</string>
+    <string name="txt_register_Password">Password</string>
+    <string name="txt_register_sex">Sex</string>
+    <string name="txt_register_age">Age</string>
+
+    <string name="edit_register">... </string>
+
+
+    <string name="button_register_save">Save</string>
+    <string name="button_register_cancel">Cancel</string>
+
+    <!--***********************************************************-->
+
+    <!--************************* Login ***************************-->
+
+    <string name="button_Login_Register">Register</string>
+    <string name="button_Login_cancel">Not Now</string>
+    <string name="button_Login_Login">Login</string>
+
+
+    <!--***********************************************************-->
+
+
+    <!--************************ menu ******************************-->
+    <string name="action_menu_main_registered_logout">Logout</string>
+    <string name="action_menu_main_registered_name">Name</string>
+    <string name="action_menu_main_unregistered_login">Login</string>
+    <string name="action_menu_main_unregistered_registration">Register</string>
+    <string name="action_menu_main_unregistered_name">Gust</string>
+
+    <!--************************************************************-->
+
+    <!--********************** main ********************************-->
+    <string name="button_main_hiDr">Hi Doctor</string>
+    <string name="button_main_store">Factory Setting</string>
+    <string name="button_main_reservation">Reservation</string>
+    <string name="button_main_advertisement">Advertisement</string>
+    <string name="button_main_discount">Discount</string>
+    <string name="title_activity_hi_doctor_main">Hi Doctor</string>
+
+    <!-- ********************************************************** -->
+
+
+    <!--********************** main MyDr ********************************-->
+    <string name="nav_item_Logout">Logout</string>
+
+    <string name="nav_item_Login">Login</string>
+    <string name="nav_item_Register">Register</string>
+
+    <string name="nav_item_Setting">Setting</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels_Registered_main_MyDr">
+        <item>@string/nav_item_Logout</item>
+        <item>@string/nav_item_Setting</item>
+    </string-array>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels_unregistered_main_MyDr">
+        <item>@string/nav_item_Login</item>
+        <item>@string/nav_item_Register</item>
+        <item>@string/nav_item_Setting</item>
+    </string-array>
+    <!--********************** Hi Doctor ********************************-->
+
+    <string name="txt_HiDr_Sort">Sort</string>
+
+    <!--********************** Hi Doctor ********************************-->
+
+    <string name="action_HiDr_newMessage">new</string>
+    <string name="action_HiDr_Search">Search</string>
+    <string name="txt_HiDr_main_Subject">Subject: </string>
+    <string name="txt_HiDr_main_Subject_User_Enter">Subject</string>
+
+    <string name="txt_HiDr_dialog_Subject_question">Question</string>
+    <string name="title_activity_question_hi_dr">QuestionHiDrActivity</string>
+    <string name="title_activity_action_bar_search_view_hi_dr">ActionBarSearchViewHiDr</string>
+    <string name="title_activity_my_fragment_example">MyFragmentExample</string>
+    <!-- ********************************************************** -->
+
+
+    <!-- ****************  example listFragment ****************************************** -->
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="title_activity_main_view_pager">MainViewPager</string>
+    <string name="title_activity_main_smart_view_pager">MainSmartViewPager</string>
+    <string name="title_activity_main_tab_layout_swipeable">MainTabLayoutSwipeable</string>
+    <!-- ********************************************************************************* -->
+
+    <!-- ********************* test material design tab base ******************************* -->
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <!-- ********************************************************************************* -->
+
+    <!-- **********************test navigation drawer********************************** -->
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find People</item>
+        <item>Photos</item>
+        <item>Communities</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@mipmap/hi_doctor_new_message</item>
+        <item>@mipmap/hi_doctor</item>
+        <item>@mipmap/hi_doctor_answered</item>
+        <item>@mipmap/hi_doctor_2</item>
+        <item>@mipmap/advertisement</item>
+        <item>@mipmap/advertisement_2</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_test_1">test_1</string>
+    <string name="title_activity_main_test_2">main_test_2</string>
+    <string name="title_activity_main_material_design">mainMaterialDesign</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_resycle_view">MainResycleView</string>
+    <string name="title_activity_main__my_dr">Main_MyDr</string>
+    <string name="title_activity_main_my_dr">MainMyDr</string>
+    <string name="title_activity_hi_doctor_select_dr">HiDoctorSelectDr</string>
+    <string name="title_activity_select_contact">SelectContactActivity</string>
+    <string name="title_activity_hi_doctor_question">HiDoctorQuestionActivity</string>
+    <string name="title_activity_main_net_test">MainNetTest</string>
+    <!-- ********************************************************************************* -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- *****************       GCM Test         ********************** -->
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="err_msg_name">Enter full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="title_activity_chat_room_discussion">ChatRoomDiscussionActivity</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_login_activity__gcmtest">LoginActivity_GCMTest</string>
+    <string name="title_activity_chat_room">ChatRoomActivity</string>
+    <!-- ********************************************************************************* -->
+
+
+</resources>

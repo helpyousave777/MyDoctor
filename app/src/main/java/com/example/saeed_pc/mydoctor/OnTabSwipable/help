@@ -1,0 +1,9 @@
+example of fragment than contain :
+1- OnTabSwipable directory
+2- res --- values --- strings --- aray string
+3- res --- layout:
+                    example fragment
+                    example fragment b
+                    fragment item grid
+                    fragment item list
+                    list fragment

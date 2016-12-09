@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saeed_pc.mydoctor">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.c2dm.permission.INTERNET" />
+    <uses-permission android:name="android.c2dm.permission.GET_ACCOUNT" />
+    <uses-permission android:name="android.c2dm.permission.WAKE_LOCK" />
+    <uses-permission android:name="gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".Main_MyDr.GCM.app.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".Main.Splash.Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.LoginRegister.Login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Main.LoginRegister.Register.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.HiDoctorMainActivity"
+            android:label="@string/title_activity_hi_doctor_main">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.example.saeed_pc.mydoctor.Hi_Dr.ActionBarSearchViewHiDr" />
+        </activity>
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.QuestionHiDrActivity"
+            android:label="@string/title_activity_question_hi_dr"
+            android:parentActivityName=".Main_MyDr.Hi_Dr.HiDoctorMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_MyDr.Hi_Dr.HiDoctorMainActivity" />
+        </activity>
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.ActionBarSearchViewHiDr"
+            android:label="@string/title_activity_action_bar_search_view_hi_dr">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <service
+            android:name=".Main.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".OnTabSwipable.MyFragmentExample"
+            android:label="@string/title_activity_my_fragment_example" />
+        <activity
+            android:name=".OnTabSwipable.ViewPager.MainViewPager"
+            android:label="@string/title_activity_main_view_pager" />
+        <activity
+            android:name=".OnTabSwipable.SmartViewPager.MainSmartViewPager"
+            android:label="@string/title_activity_main_smart_view_pager" />
+        <activity
+            android:name=".OnTabSwipable.TabLayoutSwipeable.MainTabLayoutSwipeable"
+            android:label="just test" />
+        <activity
+            android:name=".OnTabSwipable.test_drawer.test_1.test_2.main_test_2"
+            android:label="@string/title_activity_main_test_2"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".OnTabSwipable.materialDesign.mainMaterialDesign"
+            android:label="@string/title_activity_main_material_design"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".OnTabSwipable.RecycleView.MainResycleView"
+            android:label="@string/title_activity_main_resycle_view"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Main_MyDr.MainMyDr"
+            android:label="@string/title_activity_main_my_dr"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.HiDoctorSelectDr"
+            android:label="@string/title_activity_hi_doctor_select_dr"
+            android:parentActivityName=".Main_MyDr.MainMyDr"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.saeed_pc.mydoctor.Main_MyDr.MainMyDr" />
+        </activity>
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.SelectContactActivity"
+            android:label="@string/title_activity_select_contact"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Main_MyDr.Hi_Dr.HiDoctorQuestionActivity"
+            android:label="@string/title_activity_hi_doctor_question"
+            android:parentActivityName=".Main_MyDr.MainMyDr"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.saeed_pc.mydoctor.Main_MyDr.MainMyDr" />
+        </activity>
+        <activity android:name=".Main_MyDr.GCM.MainGCMTest" />
+        <activity
+            android:name=".test.InternetTest.MainNetTest"
+            android:label="@string/title_activity_main_net_test"
+            android:theme="@style/MyMaterialTheme" />
+
+        <!-- GCM Receiver -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.gnirt69.gcmexample" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM Receiver Service -->
+        <service
+            android:name=".Main_MyDr.GCM.manger.GCMPushReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- GCM Registration Intent Service -->
+        <service
+            android:name=".Main_MyDr.GCM.manger.GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Main_MyDr.Service.TestService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".Main_MyDr.Service.TestBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".Main_MyDr.GCM.gcm.MyGcmPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Main_MyDr.GCM.gcm.GcmIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Main_MyDr.GCM.LoginActivity_GCMTest"
+            android:label="@string/title_activity_login_activity__gcmtest"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Main_MyDr.GCM.ChatRoomActivity"
+            android:label="@string/title_activity_chat_room"
+            android:theme="@style/MyMaterialTheme"></activity>
+    </application>
+
+</manifest>

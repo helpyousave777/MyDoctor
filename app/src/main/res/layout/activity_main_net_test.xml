@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.example.saeed_pc.mydoctor.test.InternetTest.MainNetTest">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgViewNetTst_searchBtn"
+            android:src="@android:mipmap/sym_def_app_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick_NetTst_searchBtn"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/edtTxtNetTst_SiteName"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imgViewNetTst_searchBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TxtNetTst_PageContent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StartService"
+            android:id="@+id/btnNetTestStartService"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/TxtNetTst_PageContent"
+            android:layout_toStartOf="@+id/TxtNetTst_PageContent"
+            android:onClick="onStartServiceNetTest"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StopService"
+            android:id="@+id/btnNetTestStopService"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/TxtNetTst_PageContent"
+            android:layout_toEndOf="@+id/TxtNetTst_PageContent"
+            android:onClick="onStopServiceNetTest"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnNetTst_LoginPush"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:onClick="onLoginPush_netTes"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btnNetTst_RegisterPush"
+            android:layout_marginRight="61dp"
+            android:layout_marginEnd="61dp"
+            android:onClick="onRegisterPush_netTes"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNetTst_Usr"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNetTst_pass"
+            android:layout_below="@+id/edtNetTst_Usr"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNetTst_Role"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

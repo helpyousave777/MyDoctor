@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+
+    <color name="list_background">#c8e8ff</color>
+    <color name="list_background_pressed">#125688</color>
+    <color name="list_divider">#125688</color>
+    <color name="counter_text_bg">#000000</color>
+    <color name="list_item_title">#125688</color>
+    <color name="counter_text_color">#c8e8ff</color>
+
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+</resources>

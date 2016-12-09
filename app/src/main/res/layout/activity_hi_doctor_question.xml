@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.example.saeed_pc.mydoctor.Main_MyDr.Hi_Dr.HiDoctorQuestionActivity">
+
+
+
+        <include
+            android:id="@+id/toolbar_Question_HiDr"
+            layout="@layout/toolbar_select_contact" />
+
+
+
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fragment_container_Question_HiDr"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="6"
+                >
+
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgViewSendQuestionHiDr"
+                android:src="@android:mipmap/sym_def_app_icon"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClick_SendQuestion_HiDr"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/edtTxtQuestionHiDr"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/imgViewSendQuestionHiDr"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

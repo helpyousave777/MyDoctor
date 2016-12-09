@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.saeed_pc.mydoctor.OnTabSwipable.TabLayoutSwipeable.MainTabLayoutSwipeable">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_Search_test"
+        android:title="@string/action_HiDr_Search"
+        android:icon="@mipmap/hi_doctor_search"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        />
+</menu>
